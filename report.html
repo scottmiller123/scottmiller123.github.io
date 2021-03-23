@@ -1,0 +1,163 @@
+<html>
+
+<head>
+    <title>2021-03-23 Report</title>
+    <!--
+      https://www.chartjs.org/samples/latest/
+      https://developers.google.com/chart/interactive/docs/gallery
+      https://www.w3schools.com/howto/howto_google_charts.asp
+      https://www.tablesgenerator.com/html_tables
+      # social media KPIs? Direct messages, comments, shares
+      https://www.w3schools.com/charsets/ref_utf_arrows.asp
+      -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">google.charts.load('current', { packages: ['corechart', 'bar'] });</script>
+    <style>
+        #people {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #people td,
+        #people th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #people th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .data {
+            font-size: 1em; font-weight: bold;
+        }
+        .green {
+            /* background-color: #81c483; */
+            color: green;
+        }
+        .red {
+            /* background-color: #81c483; */
+            color: red;
+        }
+
+        #zone {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 1.5em; font-weight: bold;
+        }
+
+        #zone td,
+        #zone th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #zone th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        #zone tr:nth-child(even){background-color: #f2f2f2;}
+        #zone tr:hover {background-color: #ddd;}
+
+        #zone span {
+            font-size: 1em; font-weight: bold;
+        }
+    </style>
+    <!--
+      #people tr:nth-child(even){background-color: #f2f2f2;}
+      #people tr:hover {background-color: #ddd;}
+      -->
+</head>
+
+<body>
+    <table border='1' id="zone">
+        <!-- EVE: count-by-progress.csv -->
+        <tr>
+            <td valign="top">
+            </td>
+            <td valign="top">
+                <span>Total</span><br/>
+            </td>
+            <td valign="top">
+                <span class="data">Teaching</span><br/>
+            </td>
+            <td valign="top">
+                <span class="data">On Date</span><br/>
+            </td>
+            <td valign="top">
+                <span class="data">Baptized</span><br/>
+            </td>
+        </tr>
+
+        <!-- total     teach        ondate     baptized-->
+        <tr><td>Far West</td><td>5</td><td>2</td><td>1</td><td></td></tr>
+        <tr><td>Inde South</td><td>3</td><td>3</td><td></td><td></td></tr>
+        <tr><td>Kansas City East</td><td>4</td><td>4</td><td></td><td></td></tr>
+        <tr><td>Kansas City West</td><td>2</td><td>1</td><td></td><td></td></tr>
+        <tr><td>Lenexa North</td><td>14</td><td>8</td><td>2</td><td></td></tr>
+        <tr><td>Lenexa South</td><td>3</td><td>2</td><td></td><td>1</td></tr>
+        <tr><td>Liberty North</td><td>4</td><td>2</td><td></td><td></td></tr>
+        <tr><td>Liberty South</td><td>1</td><td>1</td><td></td><td></td></tr>
+        <tr><td>Olathe</td><td>3</td><td></td><td>1</td><td>1</td></tr>
+        <tr><td>Platte City</td><td>5</td><td>1</td><td></td><td>2</td></tr>
+        <tr><td>Warrensburg North</td><td>1</td><td>1</td><td></td><td></td></tr>
+        <tr><td>Warrensburg South</td><td>3</td><td>2</td><td></td><td></td></tr>
+
+        <tr>
+            <td valign="top">
+            </td>
+            <td valign="top">
+                <span class="data">48 </span><span class="data red">&darr;2</span>
+            </td>
+            <td valign="top">
+                <span class="data">27 </span><span class="data green">&nbsp;</span>
+            </td>
+            <td valign="top">
+                <span class="data">4 </span><span class="data green">&nbsp;</span>
+            </td>
+            <td valign="top">
+                <span class="data">4 </span><span class="data green">&nbsp;</span>
+            </td>
+        </tr>
+    </table>
+    <br/>
+
+    <table border='1' id="people">
+
+        <!--
+            https://www.facebook.com/ads/manager
+            https://www.facebook.com/adsmanager/
+
+            ** messaging engagement
+            ** 
+         -->
+        <tr>
+            <td>
+                <h1>People Reached<br>145,707<span class="data green"> (&uarr;3,364)</span></h1>
+            </td>
+            <td>
+                <h1>Conversations<br>1,417<span class="data green"> (&uarr;47)</span></h1>
+            </td>
+            <td>
+                <h1>Cost/Conversation<br>$8.80</h1>
+            </td>
+            <td>
+                <h1>Spent<br>$12,467<span class="data green"> (&uarr;475)</span></h1>
+            </td>
+        </tr>
+    </table>
+    <br/>
+
+
+</body>
+</html>
